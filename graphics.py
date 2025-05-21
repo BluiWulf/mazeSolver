@@ -38,8 +38,8 @@ class Line:
         self.pt_A = pt_A
         self.pt_B = pt_B
 
-    def draw(self, Canvas, fill_color):
-        self.canvas.create_line(
-            self.pt_A.x, self.pt_A.y, self.pt_B.x, self.pt_B.y, fill = self.fill_color, width = 2
+    def draw(self, canvas, fill_color):
+        canvas.create_line(
+            self.pt_A.x, self.pt_A.y, self.pt_B.x, self.pt_B.y, fill = fill_color, width = 2
         )
 
