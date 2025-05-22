@@ -3,8 +3,15 @@ from cell import Cell
 from maze import Maze
 
 def main():
-    win = Window(810, 610)
-    Maze(5, 5, 30, 20, 40, 20, win)
+    num_cols = 12
+    num_rows = 10
+    margin = 50
+    screen_x = 800
+    screen_y = 600
+    cell_size_x = (screen_x - 2 * margin) / num_cols
+    cell_size_y = (screen_y - 2 * margin) / num_rows
+    win = Window(screen_x, screen_y)
+    m1 = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, win, 5)
 
     win.wait_for_close()
 
