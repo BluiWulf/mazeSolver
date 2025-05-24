@@ -4,15 +4,17 @@ import random
 from cell import Cell
 
 class Maze:
-    def __init__(self,
-                 x1,
-                 y1,
-                 num_rows,
-                 num_cols,
-                 cell_size_x,
-                 cell_size_y,
-                 win = None,
-                 seed = None):
+    def __init__(
+            self,
+            x1,
+            y1,
+            num_rows,
+            num_cols,
+            cell_size_x,
+            cell_size_y,
+            win = None,
+            seed = None
+        ):
         self.__x1 = x1
         self.__y1 = y1
         self.__num_rows = num_rows
