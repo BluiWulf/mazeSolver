@@ -1,5 +1,6 @@
 from graphics import Point, Line
 
+# Class for a single Cell object
 class Cell:
     def __init__(self, window = None):
         self.has_left_wall = True
